@@ -10,7 +10,7 @@ var initialState = JSON.parse(localStorage.getItem("input"))
 var myReducer = (state = initialState, actions) => {
   switch (actions.type) {
     case types.HandleInput:
-      var a = actions.data.trim().split(" ");
+      var a = actions.data.trim().split("");
       var arr=[];
       for(let i=0;i<a.length;i++){
         if(a[i]!==" "){
