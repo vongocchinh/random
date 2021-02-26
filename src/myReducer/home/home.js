@@ -3,20 +3,14 @@ import * as types from "./../../constant/home";
 var initialState = JSON.parse(localStorage.getItem("input"))
   ? JSON.parse(localStorage.getItem("input"))
   : {
-      arr: ["1", "2", "3", "4"],
+      arr: ["Apple", "Samsung", "Iphone", "Nokia"],
       data: "",
       rules: false,
     };
 var myReducer = (state = initialState, actions) => {
   switch (actions.type) {
     case types.HandleInput:
-      var a = actions.data.trim().split("");
-      var arr=[];
-      for(let i=0;i<a.length;i++){
-        if(a[i]!==" "){
-          arr.push(a[i]);
-        }
-      }
+      var arr = actions.data.trim().split("\n");
       var rand = 0;
       rand = arr[Math.floor(Math.random() * arr.length)];
       state = {

@@ -15,7 +15,7 @@
     width: 350px; /*Change this when change size*/
     height: 350px; /*Change this when change size*/
     border-radius: 50%;
-    border: 16px solid #e44025;
+    border: 2px solid #e44025;
     box-shadow: 0 2px 3px #333, 0 0 2px #000;
 }
 
@@ -97,20 +97,20 @@
     text-decoration: none;
 }
 
-.hc-luckywheel-btn::after {
-    position: absolute;
-    display: block;
-    content: "";
-    left: 10px;
-    top: -46px;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    border-width: 30px;
-    border-style: solid;
-    border-color: transparent;
-    border-bottom-color: #e44025;
-}
+// .hc-luckywheel-btn::after {
+//     position: absolute;
+//     display: block;
+//     content: "";
+//     left: 10px;
+//     top: -46px;
+//     width: 0;
+//     height: 0;
+//     overflow: hidden;
+//     border-width: 30px;
+//     border-style: solid;
+//     border-color: transparent;
+//     border-bottom-color: #e44025;
+// }
 
 .hc-luckywheel-btn.disabled {
     pointer-events: none;
